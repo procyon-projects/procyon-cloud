@@ -11,7 +11,7 @@ type ServiceInstance interface {
 }
 
 type DiscoveryClient interface {
-	Description() string
+	GetDescription() string
 	GetServiceInstances(serviceId string) []ServiceInstance
 	GetServices() []string
 }
